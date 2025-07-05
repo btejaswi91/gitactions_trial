@@ -49,7 +49,7 @@ jobs:
       - name: Run Unit Tests
         run: ./gradlew testDebugUnitTest
 
-  android:
+  android-ui-tests:
     runs-on: ubuntu-latest
 
     strategy:
@@ -74,7 +74,7 @@ jobs:
           java-version: 17
           distribution: temurin
 
-      - uses: gradle/actions/setup-gradle@v4
+#      - uses: gradle/actions/setup-gradle@v4
 
       - name: Run Tests
         uses: reactivecircus/android-emulator-runner@v2
