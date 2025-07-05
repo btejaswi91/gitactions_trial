@@ -64,6 +64,6 @@ jobs:
         with:
           api-level: 34
           target: google_apis
-          arch: arm64
+          arch: arm64-v8a
           profile: pixel_5
           script: ./gradlew connectedDebugAndroidTest
